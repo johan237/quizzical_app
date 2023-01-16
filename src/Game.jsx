@@ -7,6 +7,7 @@ export default function Game(props){
 
     console.log("game component running")
     const [answer,setAnswer] = React.useState(0)        
+    const defaultText = 'Wait a few seconds....'
     
     const [difficultyText, setDifficultyText] = React.useState(()=>{
       if(props.difficultyVal == 0){
@@ -22,7 +23,6 @@ export default function Game(props){
     // console.log(props.difficultyVal)
     console.log(difficultyText)
     const [data,setData] = React.useState([])
-
 const [checked, setChecked] =React.useState(false)
 
   function shuffleArray(array) {
@@ -94,7 +94,7 @@ const [checked, setChecked] =React.useState(false)
 
     return(
         <div className='game'>
-           {dataElement}
+           {dataElement ? dataElement : defaultText}
 
 {!checked ? <button onClick={checkAnswer} className='btn btn--check'>Check answers</button> :(<div className="flex"><h3>You scored {answer}/{data.length} correct answer</h3> <button onClick={()=>props.newGame()} className="btn btn--check">Play again</button></div>) }
         </div>
