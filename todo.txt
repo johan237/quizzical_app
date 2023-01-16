@@ -1,0 +1,6 @@
+ TODO LIST: List of actions to complete
+ -
+ 
+I want to be able to set all my answers directly from my question component
+
+Trigger question component to set correct answer and style whenever I click on check answer button
