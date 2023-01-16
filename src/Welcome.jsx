@@ -19,7 +19,7 @@ export default function Welcome(props){
     return (
             <div className="welcome">
                 <h1>Quizzical</h1>
-                <p>Some description if needed</p>
+                <p>Hello...</p>
 
                 <h1 className="setting">Game Settings</h1>
                 <h1 className="difficulty--title">Difficulty</h1>
